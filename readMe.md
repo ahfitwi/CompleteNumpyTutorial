@@ -1,6 +1,6 @@
 # np.where
-- np.where((colSums > 0.8*xhSize) & (colSums < 1.2*xhSize) & (colSums == colSumsmax))[1]
-- np.where(np.logical_and(colSums > 0.8*xhSize, colSums < 1.2*xhSize, colSums == colSumsmax))[1].tolist()
+- np.where((colSums > 0.8*Size) & (colSums < 1.2*Size) & (colSums == colSumsmax))[1]
+- np.where(np.logical_and(colSums > 0.8*Size, colSums < 1.2*Size, colSums == colSumsmax))[1].tolist()
 
         
         Code #1:
