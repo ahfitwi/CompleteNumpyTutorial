@@ -65,5 +65,19 @@
     - We can now compute the mean of the dataset, without taking the invalid data into account:
 
               mx.mean() --> 2.75
+    - The main feature of the numpy.ma module is the MaskedArray class, which is a subclass of numpy.ndarray. The class, its attributes and methods are described in more details in the MaskedArray class section
+    - The numpy.ma module can be used as an addition to numpy:
+
+                      import numpy as np
+                      import numpy.ma as ma
+    - To create an array with the second element invalid, we would do:
+ 
+                      y = ma.array([1, 2, 3], mask = [0, 1, 0])
+                      y.data
+                      y.mask
+    - To create a masked array where all values close to 1.e20 are invalid, we would do:
+ 
+                      z = ma.masked_values([1.0, 1.e20, 3.0, 4.0], 1.e20)
+    
 
     
